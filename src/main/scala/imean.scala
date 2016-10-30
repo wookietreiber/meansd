@@ -3,7 +3,8 @@ package meansd
 import scalanative.native._
 import stdio._
 
-@struct class IMean (val n: Long = 0, val mean: Double = 0, val m2: Double = 0) {
+@struct
+class IMean(val n: Long = 0, val mean: Double = 0, val m2: Double = 0) {
   def update(x: Double): IMean = {
     val nn = n + 1
     val delta = x - mean

@@ -1,6 +1,6 @@
 package meansd
 
-class MMean (var n: Long = 0, var mean: Double = 0, var m2: Double = 0) {
+class MMean(var n: Long = 0, var mean: Double = 0, var m2: Double = 0) {
   def update(x: Double): Unit = {
     val delta = x - mean
     n += 1
